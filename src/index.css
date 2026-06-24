@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Abhaya Libre", serif;
+  --font-script: "Abhaya Libre", cursive;
+  --font-sans: "Abhaya Libre", sans-serif;
+  --font-cinzel: "Abhaya Libre", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-playball: "Abhaya Libre", cursive;
+  --font-sinhala: "Abhaya Libre";
+
+  --color-sage: #d4af37;
+  /* Gold */
+  --color-paper: #ffffff;
+
+  --color-theme-50: #fefcf5;
+  --color-theme-100: #fdf6e3;
+  --color-theme-200: #fbeaba;
+  --color-theme-300: #f8db8d;
+  /* Gold */
+  --color-theme-400: #f4c85b;
+  --color-theme-500: #ebb035;
+  /* Dark Gold */
+  --color-theme-600: #d4af37;
+  --color-theme-700: #b8860b;
+  /* Deep Gold */
+  --color-theme-800: #8b6914;
+  --color-theme-900: #6b4c0a;
+}
+
+:root {
+  background-color: var(--color-paper);
+  color: #4D412F;
+  font-family: var(--font-sinhala);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Abhaya Libre", Arial, sans-serif !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+
+.clip-path-envelope {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.clip-path-envelope-bottom {
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.website-shell {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(212, 175, 55, 0.15), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(184, 134, 11, 0.1), transparent 40%),
+    radial-gradient(circle at 50% 20%, rgba(248, 219, 141, 0.2), transparent 50%),
+    linear-gradient(135deg, #ffffff 0%, #fdf6e3 50%, #ffffff 100%);
+}
+
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage);
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.font-numeric {
+  font-family: "Montserrat", "Inter", sans-serif !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Apex", sans-serif !important;
+}
+
+.mask-gradient {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
