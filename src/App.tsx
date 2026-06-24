@@ -364,7 +364,10 @@ export default function WeddingInvitation() {
                       setHasStarted(true);
 
                       if (introVideoRef.current) {
-                        introVideoRef.current.muted = false;
+                        introVideoRef.current.muted = true;
+                        if (audioRef.current && !isPlaying) {
+                          audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+                        }
                         introVideoRef.current.currentTime = 0;
                         introVideoRef.current.play();
                       }
@@ -1061,73 +1064,7 @@ export default function WeddingInvitation() {
 
 
 
-            {(() => {
-              const PRE_IMAGES = [
-                "/pre/WhatsApp Image 2026-06-24 at 22.45.56.jpeg",
-                "/pre/WhatsApp Image 2026-06-24 at 22.45.57 (1).jpeg",
-                "/pre/WhatsApp Image 2026-06-24 at 22.45.57.jpeg",
-                "/pre/WhatsApp Image 2026-06-24 at 22.45.58.jpeg",
-                "/pre/WhatsApp Image 2026-06-24 at 22.45.59.jpeg",
-                "/pre/WhatsApp Image 2026-06-24 at 22.46.00.jpeg"
-              ];
-              const marqueeImages = [...PRE_IMAGES, ...PRE_IMAGES, ...PRE_IMAGES];
-
-              return (
-                <section className="relative py-14 md:py-40 bg-transparent overflow-hidden">
-                  <div className="w-full relative z-10 text-center">
-                    <motion.div
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      className="space-y-6 mb-10 md:mb-16 px-6"
-                    >
-                      <div className="flex flex-col items-center gap-4">
-                        <span className="text-[#8c6b2b] font-bold tracking-[0.8em] text-sm md:text-base opacity-40 uppercase">
-                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Our Memories</span><span className="leading-none">අපගේ මතකයන්</span></span>
-                        </span>
-                        <div className="h-px w-16 bg-[#8c6b2b]/30" />
-                      </div>
-                      <h2 className="text-5xl md:text-8xl bg-gradient-to-r from-[#d4af37] via-[#8c6b2b] to-[#d4af37] bg-clip-text text-transparent italic leading-none">
-                        සුන්දර මතක
-                      </h2>
-                      <p className="text-[#8c6b2b]/70 text-sm md:text-base tracking-[0.3em] font-medium max-w-2xl mx-auto pt-2 leading-loose">
-                        අපගේ ආදර කතාවේ සුන්දරතම මොහොතක් ඔබ සමඟ බෙදා ගැනීමට අප සතුටින් බලා සිටිමු.
-                      </p>
-                    </motion.div>
-
-                    <div className="relative flex overflow-x-hidden w-full py-4 mask-gradient">
-                      <motion.div
-                        className="flex gap-6 md:gap-10 pr-6 md:pr-10 shrink-0"
-                        animate={{
-                          x: [0, "-33.33%"],
-                        }}
-                        transition={{
-                          ease: "linear",
-                          duration: 25,
-                          repeat: Infinity,
-                        }}
-                      >
-                        {marqueeImages.map((img, i) => (
-                          <div
-                            key={`${img}-${i}`}
-                            className="relative w-[280px] h-[380px] md:w-[350px] md:h-[480px] shrink-0 overflow-hidden rounded-[2.5rem] shadow-[0_20px_50px_-15px_rgba(140,107,43,0.15)] border border-[#d4af37]/30 group"
-                          >
-                            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 z-10" />
-                            <img
-                              src={img}
-                              alt=""
-                              className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                              loading="lazy"
-                            />
-                            <div className="absolute inset-4 border border-white/20 rounded-[2rem] z-20 pointer-events-none group-hover:inset-6 transition-all duration-700" />
-                          </div>
-                        ))}
-                      </motion.div>
-                    </div>
-                  </div>
-                </section>
-              );
-            })()}
+            
 
             <section className="relative py-28 md:py-48 overflow-hidden bg-white">
               <div
