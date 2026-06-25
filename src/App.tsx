@@ -555,14 +555,14 @@ export default function WeddingInvitation() {
 
                       <div className="flex flex-col items-center justify-center gap-2">
                         <span className="text-sm md:text-base tracking-wider text-slate-700">
-                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving daughter of Mr. Gamini Perera & Mrs. Ranjani Chandramali</span><span className="leading-none">ගාමිණී පෙරේරා මැතිතුමාගේ සහ රංජනී චන්ද්‍රමාලි මැතිනියගේ ආදරණීය දියණිය</span></span>
+                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving daughter of Mrs. Mangalika</span><span className="leading-none">මංගලිකා මැතිනියගේ ආදරණීය දියණිය</span></span>
                         </span>
                         <span className="text-xl md:text-2xl font-bold text-[#d4af37] my-1">
                           {INVITATION.couple.brideFull}
                         </span>
                         <span className="text-2xl text-[#d4af37] italic my-2"><span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">With</span><span className="leading-none">සමඟ</span></span></span>
                         <span className="text-sm md:text-base tracking-wider text-slate-700">
-                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving son of Mr. Keerthi Perera & Mrs. Priyanthi Perera</span><span className="leading-none">කීර්ති පෙරේරා මැතිතුමාගේ සහ ප්‍රියන්ති පෙරේරා මැතිනියගේ ආදරණීය පුතණුවන්</span></span>
+                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving son of Mr. Wijesiri</span><span className="leading-none">විජේසිරි මැතිතුමාගේ ආදරණීය පුතණුවන්</span></span>
                         </span>
                         <span className="text-xl md:text-2xl font-bold text-[#d4af37] my-1">
                           {INVITATION.couple.groomFull}
@@ -706,7 +706,7 @@ export default function WeddingInvitation() {
                   <div className="p-8 md:p-12 space-y-8">
                     {[
                       [<span className="inline-flex flex-col items-start gap-1"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Wedding Ceremony</span><span className="leading-none">විවාහ මංගල උත්සවය</span></span>, INVITATION.time.ceremonyStart],
-                      [<span className="inline-flex flex-col items-start gap-1"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Lunch</span><span className="leading-none">දිවා ආහාරය</span></span>, "09:00 PM"],
+                      [<span className="inline-flex flex-col items-start gap-1"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Dinner</span><span className="leading-none">රාත්‍රී ආහාරය</span></span>, "08:00 PM"],
                       [<span className="inline-flex flex-col items-start gap-1"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">End of Ceremony</span><span className="leading-none">උත්සවය අවසානය</span></span>, INVITATION.time.ceremonyEnd],
                     ].map(([title, time]) => (
                       <div key={title} className="flex items-start gap-4">
