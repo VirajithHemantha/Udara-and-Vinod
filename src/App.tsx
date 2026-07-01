@@ -555,14 +555,14 @@ export default function WeddingInvitation() {
 
                       <div className="flex flex-col items-center justify-center gap-2">
                         <span className="text-sm md:text-base tracking-wider text-slate-700">
-                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving daughter of Mrs. Mangalika</span><span className="leading-none">මංගලිකා මැතිනියගේ ආදරණීය දියණිය</span></span>
+                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving daughter of Mrs. Mangalika</span><span className="leading-none">ප්‍රේමදාස මැතිතුමාගේ සහ මංගලිකා මැතිනියගේ ආදරණීය දියණිය</span></span>
                         </span>
                         <span className="text-xl md:text-2xl font-bold text-[#d4af37] my-1">
                           {INVITATION.couple.brideFull}
                         </span>
                         <span className="text-2xl text-[#d4af37] italic my-2"><span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">With</span><span className="leading-none">සමඟ</span></span></span>
                         <span className="text-sm md:text-base tracking-wider text-slate-700">
-                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving son of Mr. Wijesiri</span><span className="leading-none">විජේසිරි මැතිතුමාගේ ආදරණීය පුතණුවන්</span></span>
+                          <span className="inline-flex flex-col items-center justify-center gap-1 text-center"><span className="text-[0.75em] md:text-[0.8em] md:text-[0.65em] uppercase tracking-[0.2em] font-sans opacity-100 leading-none mt-1 mb-1">Loving son of Mr. Wijesiri</span><span className="leading-none">විජේසිරි මැතිතුමාගේ සහ සෙනෙහෙලතා මැතිනියගේ ආදරණීය පුතණුවන්</span></span>
                         </span>
                         <span className="text-xl md:text-2xl font-bold text-[#d4af37] my-1">
                           {INVITATION.couple.groomFull}
